@@ -1,4 +1,3 @@
-import React from "react";
 import { assets, testimonialsData } from "../assets/assets";
 import { motion } from "framer-motion";
 
@@ -37,7 +36,7 @@ const Blogs = () => {
             </h2>
             <p className="text-gray-500 mb-4 text-sm">{testimonial.title}</p>
             <div className="flex justify-center gap-1 text-red-500 mb-4">
-              {Array.from({ length: testimonial.rating }, (item, index) => (
+              {Array.from({ length: testimonial.rating }, (_, index) => (
                 <img key={index} src={assets.star_icon} alt="" />
               ))}
             </div>
